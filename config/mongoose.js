@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 exports.connectMongoose = () => {
   mongoose.set("strictQuery", false);
   mongoose
-    .connect("mongodb://localhost:27017/HabitTrackerDataBase", {
+    .connect("mongodb+srv://Admin:<password>@cluster0.9x6ipjm.mongodb.net/", {
       useNewUrlParser: true,
     })
     .then((e) => console.log("Connected to Mongodb"))
